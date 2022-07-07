@@ -1,21 +1,9 @@
 import numpy as np 
 import matplotlib.pyplot as plt
-import glob
 import cv2
-import tensorflow as tf
-import keras
-
-from keras.models import Model, Sequential
-from keras.layers import Dense, Flatten, Conv2D, MaxPooling2D
-from tensorflow.keras.layers import (Activation,Conv2D,BatchNormalization, SeparableConv2D, MaxPool2D, Activation, Flatten, Dropout, Dense)
 import os
-import seaborn as sns
-from sklearn.model_selection import train_test_split
-from tensorflow.keras.utils import to_categorical
 from keras.applications.vgg16 import VGG16
-from sklearn.preprocessing import LabelEncoder
 import joblib
-import lightgbm as lgb
 import pandas as pd
 from skimage import measure, io, img_as_ubyte
 from skimage.color import label2rgb, rgb2gray
